@@ -1,0 +1,15 @@
+{
+  "name": "first_node_projects",
+  "version": "1.0.0",
+  "description": "Learning Node JS",
+  "license": "ISC",
+  "author": "Dheeraj",
+  "type": "commonjs",
+  "main": "app1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "validator": "^13.15.15"
+  }
+}
