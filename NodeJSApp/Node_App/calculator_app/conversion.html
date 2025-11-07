@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Full Stack Calculator</title>
+	</head>
+	<body>
+		<h1>Currency Conversion</h1>
+		<form action="/conversion" method="post">
+			<label for="amount">Enter Amount</label>
+			<input type="number" name="amount" id="amount" />
+			<br>
+			<label for="to">To:</label>
+			<select name="to" id="to">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+			<br>
+			<button type="submit">Convert</button>
+		</form>
+	</body>
+</html>
