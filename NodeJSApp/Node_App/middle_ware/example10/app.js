@@ -4,8 +4,12 @@ const app = express();
 const port = 3000;
 let product = require("./product");
 const { error } = require("console");
-
+const morgan = require("morgan");
+const helmet = require("helmet");
+// app.use(morgan("tiny"));
+app.use(morgan("A :method request to :url"));
 app.use(express.json());
+app.use(helmet());
 
 const checkForJson = (req, res, next) => {
   if (req.headers["content-type"] === "application/json") {
