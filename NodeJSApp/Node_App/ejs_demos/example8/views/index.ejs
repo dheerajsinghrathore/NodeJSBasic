@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EJS Example</title>
+  </head>
+  <body>
+    <% objs.forEach((p)=> { %>
+    <p><strong>Name:</strong><%=p.name%></p>
+    <p><strong>Age:</strong><%=p.age%></p>
+    <p><strong>Address:</strong><%=p.city%></p>
+    <hr/>
+    <% }); %>
+  </body>
+</html>
