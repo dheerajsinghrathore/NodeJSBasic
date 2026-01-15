@@ -1,9 +1,12 @@
 const express = require("express");
 const mysql = require("mysql2");
+const path = require("path");
 
 const app = express();
 
-app.set("view-engine", "ejs");
+// Set view engine and views directory
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 const conn = mysql.createConnection({
   host: "localhost",
@@ -11,7 +14,7 @@ const conn = mysql.createConnection({
   password: "Dheeraj070&",
   database: "companydb",
 });
-
+// mysql -u root -p
 conn.connect((error) => {
   if (error) {
     console.log("Error in connection");
