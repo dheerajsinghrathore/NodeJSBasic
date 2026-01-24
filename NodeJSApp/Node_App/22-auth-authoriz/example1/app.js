@@ -29,7 +29,10 @@ app.post("/api/users", async (req, res) => {
         await user.save();
 
         //6. Return obj
-        res.send(user);
+        res.send({
+            message: "User registered successfully!",
+            user: user
+        });
     } catch (ex) {
         res.status(500).send("Something went wrong");
     }
